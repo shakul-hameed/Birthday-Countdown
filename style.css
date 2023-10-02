@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+}
+.bg{
+    height: 100vh;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ), url(images/annie-spratt-J_IaguGH6rI-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+h2{
+    color: white;
+    font-size: 5rem;
+    font-weight: bold;
+    font-family: "Dancing Script";
+    padding: 3rem;
+}
+
+.crown{
+    height: 70px;
+    position: absolute;
+    top: 1rem;
+    right: 460px;
+   
+}
+
+#day{
+    color: #F0DE36;
+}
+
+#hour{
+    color:#78C1F3;
+}
+
+#min {
+    color:#FF52A2;
+}
+
+#sec {
+    color: #FD8D14;
+}
+.comming-soon{
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding-top: 50px;
+    z-index: 5;
+    position: absolute;
+    top: 1rem;
+    right:0;
+    
+}
+
+.countdown {
+    font-family: "Happy Monkey";
+    display: flex;
+    justify-content:space-around;
+    text-align: center;
+    color: white;
+    z-index: 5;
+}
+
+.day,.hour,.min,.sec {
+    font-size: 3rem;
+}
+.day{
+    color:#F0DE36
+}
+.hour{
+    color:#78C1F3
+}
+
+.min{
+    color: #FF52A2;
+}
+
+.sec{
+    color: #FD8D14;
+}
+
+img{
+    height:70vh;
+    position: absolute;
+    bottom: 1%;
+    right: 9rem;
+}
+
+@media all and (max-width: 500px){
+    body{
+        background-size:cover;
+    }
+
+    .bg{
+        filter: blur(5px);
+    }
+
+    h2{
+        font-size: 2rem;
+        padding: 1rem;
+    }
+    .crown{
+        height: 50px;
+        left: 140px;
+        top: 14rem;
+    }
+
+    .comming-soon{
+        padding-top: 17rem;
+        right: 3rem;
+        align-items: baseline;
+        justify-content: center;
+    }
+
+    img {
+        height: 50vh;
+        bottom: 4rem;
+        left: 0.5rem;
+    }
+
+}
